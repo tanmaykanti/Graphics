@@ -1,0 +1,34 @@
+/*
+ * Singleton.cpp
+ *
+ *  Created on: 16-Jul-2017
+ *      Author: tan
+ */
+#include <iostream>
+#include "Singleton.h"
+
+Singleton::Singleton() {
+	// TODO Auto-generated constructor stub
+// Constructor is private
+}
+bool Singleton::createFLAG=false;
+Singleton* Singleton::st=NULL;
+Singleton* Singleton::getInstance()
+{
+	Singleton* ptr;
+	if(!createFLAG)
+	{
+		ptr= new Singleton;
+	}
+
+	return ptr;
+}
+
+void Singleton::show()
+{
+	cout<<
+}
+Singleton::~Singleton() {
+	// TODO Auto-generated destructor stub
+}
+

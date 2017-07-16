@@ -1,0 +1,17 @@
+/*
+ * Singleton.h
+ *
+ *  Created on: 16-Jul-2017
+ *      Author: tan
+ */
+
+#ifndef SINGLETON_H_
+#define SINGLETON_H_
+
+class Singleton {
+public:
+	Singleton();
+	virtual ~Singleton();
+};
+
+#endif /* SINGLETON_H_ */
