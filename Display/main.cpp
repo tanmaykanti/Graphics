@@ -9,8 +9,12 @@ void idleFunc(void);
 int main(int argc,char** argv)
 {
 	cout<<"Basic OpenGl code"<<endl;
+<<<<<<< HEAD
 	cout<<"Second commit"<<endl;
 
+=======
+	cout<<"Edited in Git"<<endl;
+>>>>>>> ff95c103874fe18a76fc2062c360aa9f01afd8dd
 	glutInit(&argc,argv);
 	glutInitDisplayMode(GLUT_RGBA|GLUT_SINGLE);
 	glutInitWindowSize(500,500);
@@ -18,6 +22,7 @@ int main(int argc,char** argv)
 	glutCreateWindow("Sample Window");
 	initFunc();
 	glutDisplayFunc(disp);
+	
 	glutIdleFunc(idleFunc);
 	glutMainLoop();
 
