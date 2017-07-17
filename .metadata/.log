@@ -19,3 +19,6 @@ Command-line arguments:  -os linux -ws gtk -arch x86
 
 !ENTRY org.eclipse.core.resources 2 10035 2017-07-16 19:56:38.708
 !MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.cdt.core 4 0 2017-07-17 20:00:06.813
+!MESSAGE no spawner in java.library.path
