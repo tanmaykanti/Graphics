@@ -10,7 +10,8 @@ int main(int argc,char** argv)
 {
 	cout<<"Basic OpenGl code"<<endl;
 	cout<<"Edited in Git"<<endl;
-	cout<<"Merged"<<endl;
+	cout<<"Edited in Kuhu PC"<<endl;
+	cout<<"Merged again"<<endl;
 	glutInit(&argc,argv);
 	glutInitDisplayMode(GLUT_RGBA|GLUT_SINGLE);
 	glutInitWindowSize(500,500);
