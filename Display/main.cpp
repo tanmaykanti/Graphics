@@ -16,6 +16,7 @@ int main(int argc,char** argv)
 	glutCreateWindow("Sample Window");
 	initFunc();
 	glutDisplayFunc(disp);
+	
 	glutIdleFunc(idleFunc);
 	glutMainLoop();
 
