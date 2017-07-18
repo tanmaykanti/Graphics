@@ -15,6 +15,7 @@ int main(int argc,char** argv)
 	cout<<"Cloned "<<endl;
 	cout<<"In Git"<<endl;
 	cout<<"In Local"<<endl;
+	cout<<"In Git"<<endl;
 	glutInit(&argc,argv);
 	glutInitDisplayMode(GLUT_RGBA|GLUT_SINGLE);
 	glutInitWindowSize(500,500);
