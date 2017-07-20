@@ -49,7 +49,7 @@ void Shape_t::colorDraw(EnumDataTypes_t::color cid)
 		break;
 
 	case EnumDataTypes_t::SAFFRON:
-		glColor3f(0.957,0.769,0.188);
+		glColor3f(1.0,0.6,0.2);
 		break;
 
 	default:

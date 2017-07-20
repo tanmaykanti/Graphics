@@ -1,4 +1,4 @@
-20:17:40 **** Incremental Build of configuration Debug for project Display ****
+20:49:06 **** Incremental Build of configuration Debug for project Display ****
 make all 
 Building file: ../Shapet.cpp
 Invoking: GCC C++ Compiler
@@ -10,9 +10,6 @@ Invoking: GCC C++ Linker
 g++  -o "Display"  ./Circlet.o ./Shapet.o ./Singleton.o ./main.o   -lglut -lGL -lGLU
 Finished building target: Display
  
-20:17:43 **** Incremental Build of configuration Debug for project Display ****
-make all 
-make: Nothing to be done for `all'.
-20:41:15 **** Incremental Build of configuration Debug for project Display ****
+20:49:10 **** Incremental Build of configuration Debug for project Display ****
 make all 
 make: Nothing to be done for `all'.

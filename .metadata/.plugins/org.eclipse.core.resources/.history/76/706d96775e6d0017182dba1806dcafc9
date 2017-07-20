@@ -91,7 +91,7 @@ void Shape_t::drawCircle(float x,float y,float radius,EnumDataTypes_t::color cid
 void Shape_t::drawFlag()
 {
 	// draw saffron color
-	colorDraw(EnumDataTypes_t::SAFFRON);
+	colorDraw(EnumDataTypes_t::MAGENTA);
 	glBegin(GL_QUADS);
 	glVertex2f(0,HEIGHT);
 	glVertex2f(WIDTH,HEIGHT);

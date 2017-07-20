@@ -11,8 +11,7 @@ public:
 		BLUE,
 		YELLOW,
 		CYAN,
-		MAGENTA,
-		SAFFRON
+		MAGENTA
 	};
 
 };
