@@ -7,11 +7,13 @@
 
 #ifndef SHAPET_H_
 #define SHAPET_H_
-
+#include "EnumDataTypes_t.h"
 class Shape_t {
-
+public:
 	Shape_t();
-	virtual ~Shape_t();
+
+	 void drawCircle(float x,float y,float radius,EnumDataTypes_t::color,bool isFill);
+
 };
 
 #endif /* SHAPET_H_ */

@@ -1,0 +1,21 @@
+/*
+ * Shapet.cpp
+ *
+ *  Created on: 16-Jul-2017
+ *      Author: tan
+ */
+
+#include "Shapet.h"
+
+Shape_t::Shape_t() {
+	// TODO Auto-generated constructor stub
+
+}
+void Shape_t::drawCircle(float x,float y,float radius,)
+{
+	int triangleCount=100;
+}
+Shape_t::~Shape_t() {
+	// TODO Auto-generated destructor stub
+}
+

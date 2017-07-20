@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Display/EnumDataTypes_t&apos; to &apos;EnumDataTypes_t.h&apos;" description="Rename resource &apos;EnumDataTypes_t&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="EnumDataTypes_t" name="EnumDataTypes_t.h" stamp="1500553146547" updateReferences="true"/>
+</session>

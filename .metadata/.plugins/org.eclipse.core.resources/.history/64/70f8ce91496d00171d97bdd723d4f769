@@ -1,0 +1,19 @@
+/*
+ * Shapet.h
+ *
+ *  Created on: 16-Jul-2017
+ *      Author: tan
+ */
+
+#ifndef SHAPET_H_
+#define SHAPET_H_
+#include "EnumDataTypes_t.h"
+class Shape_t {
+
+	Shape_t();
+public:
+	static void drawCircle(float x,float y,float radius,EnumDataTypes_t::color,bool isFill);
+	virtual ~Shape_t();
+};
+
+#endif /* SHAPET_H_ */

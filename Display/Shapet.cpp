@@ -4,15 +4,26 @@
  *  Created on: 16-Jul-2017
  *      Author: tan
  */
-
+#include "Build.h"
 #include "Shapet.h"
 
+#include <math.h>
 Shape_t::Shape_t() {
 	// TODO Auto-generated constructor stub
 
 }
+void Shape_t::drawCircle(float x,float y,float radius,EnumDataTypes_t::color,bool isFill)
+{
+	int triangleCount=100;
 
-Shape_t::~Shape_t() {
-	// TODO Auto-generated destructor stub
+	if(isFill)
+		glBegin(GL_TRIANGLE_FAN);
+		for(int i=0;i<triangleCount;i++)
+		{
+			x= x + (radius*cos(2.0*PI*i/100.0));
+			y= y + (radius*sin(2.0*PI*i/100));
+			glVertex2f(x,y);
+		}
 }
+
 

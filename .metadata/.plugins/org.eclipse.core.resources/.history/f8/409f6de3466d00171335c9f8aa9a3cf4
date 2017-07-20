@@ -1,0 +1,23 @@
+/*
+ * Shapet.cpp
+ *
+ *  Created on: 16-Jul-2017
+ *      Author: tan
+ */
+
+#include "Shapet.h"
+
+Shape_t::Shape_t() {
+	// TODO Auto-generated constructor stub
+
+}
+void Shape_t::drawCircle(float x,float y,float radius,EnumDataTypes_t::color,bool isFill)
+{
+	int triangleCount=100;
+	if(isFill)
+		glBegin(GL_TRIANGLE_FAN);
+}
+Shape_t::~Shape_t() {
+	// TODO Auto-generated destructor stub
+}
+

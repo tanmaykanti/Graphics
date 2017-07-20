@@ -1,20 +1,19 @@
-#include <iostream>
-#include <GL/glut.h>
-#include <GL/glu.h>
+#include "Build.h"
 #include "Singleton.h"
 using namespace std;
 void disp(void);
 void initFunc();
 void idleFunc(void);
+Shape_t circl;
 int main(int argc,char** argv)
 {
 	cout<<"Basic OpenGl code"<<endl;
 
 	glutInit(&argc,argv);
 	glutInitDisplayMode(GLUT_RGBA|GLUT_SINGLE);
-	glutInitWindowSize(500,500);
+	glutInitWindowSize(1000,700);
 	glutInitWindowPosition(0,0);
-	glutCreateWindow("Sample Window");
+	glutCreateWindow("Solar System");
 	initFunc();
 	glutDisplayFunc(disp);
 	
@@ -27,44 +26,21 @@ void initFunc()
 {
 	glClearColor(0.0,0.0,0.0,0.0);
 	glClear(GL_COLOR_BUFFER_BIT);
-	glViewport(0,0,500,500);
-	glOrtho(0.0,500,0.0,500.0,-1,1);
+	glViewport(0,0,1000,700);
+	glOrtho(0.0,1000,0.0,700.0,-1,1);
 }
-int x;
+
 void disp(void)
 {
 
 	glClear(GL_COLOR_BUFFER_BIT);
-	glColor3f(1,1,1);
-	glBegin(GL_LINES);
-	glVertex2f(x,100.0);
-	glVertex2f(150.0,150.0);
-	glEnd();
-	glColor3f(1,0,0);
-	glBegin(GL_TRIANGLES);
-	glVertex2f(120,100);
-	glVertex2f(240,100);
-	glVertex2f(180,210);
-	glEnd();
-	glColor3f(0,1,1);
-	glBegin(GL_POLYGON);
-	glVertex2f(120,50);
-	glVertex2f(240,50);
-	glVertex2f(180,110);
-	glEnd();
-	glColor3f(1,1,0);
-	glBegin(GL_QUADS);
-	glVertex2f(150,50);
-	glVertex2f(340,50);
-	glVertex2f(340,110);
-	glVertex2f(150,110);
-	glEnd();
+	circl.drawCircle(500,500,50,EnumDataTypes_t::RED,true);
 	glFlush();
 }
 
 void idleFunc()
 {
-	Singleton::getInstance();
-	Singleton::stptr->show();
+//	Singleton::getInstance();
+//	Singleton::stptr->show();
 	glutPostRedisplay();
 }
