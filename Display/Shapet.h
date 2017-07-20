@@ -11,9 +11,9 @@
 class Shape_t {
 public:
 	Shape_t();
-
-	 void drawCircle(float x,float y,float radius,EnumDataTypes_t::color,bool isFill);
-
+	void colorDraw(EnumDataTypes_t::color);
+	void drawCircle(float x,float y,float radius,EnumDataTypes_t::color,bool isFill);
+	void drawFlag();
 };
 
 #endif /* SHAPET_H_ */

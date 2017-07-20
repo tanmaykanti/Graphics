@@ -8,6 +8,8 @@
 #ifndef CONSTANTMACROS_H_
 #define CONSTANTMACROS_H_
 #define PI 3.141
+#define HEIGHT 768
+#define WIDTH 1024
 
 
 
