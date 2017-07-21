@@ -1,0 +1,44 @@
+/*
+ * Ellipset.cpp
+ *
+ *  Created on: 21-Jul-2017
+ *      Author: tan
+ */
+
+#include "Ellipset.h"
+#include "Build.h"
+Ellipse_t::Ellipse_t(float xc,float yc,float ac,float bc) {
+	// TODO Auto-generated constructor stub
+	x=xc;
+	y=yc;
+	a=ac;
+	b=bc;
+
+	theta=0.0;
+
+
+}
+
+float Ellipse_t::calculateR()
+{
+	float r;
+	r = (a*b)/sqrt((b*cos(theta)*b*cos(theta)) + (a*sin(theta)*a*sin(theta)));
+return r;
+}
+
+void Ellipse_t::drawEllipse()
+{
+	glPushMatrix();
+	glRotatef(60,1,0,0);
+	glRotatef(20,0,1,0);
+	glBegin(GL_LINE_LOOP);
+	for(int i=0;i<100;i++)
+	{
+		theta = 2*PI*i/100.0;
+		float X=x + calculateR()*cos(theta);
+		float Y=y + calculateR()*sin(theta);
+		glVertex2f(X,Y);
+	}
+	glEnd();
+	glPopMatrix();
+}

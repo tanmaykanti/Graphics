@@ -1,15 +1,15 @@
-20:49:06 **** Incremental Build of configuration Debug for project Display ****
+21:21:53 **** Incremental Build of configuration Debug for project Display ****
 make all 
-Building file: ../Shapet.cpp
+Building file: ../main.cpp
 Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Shapet.d" -MT"Shapet.d" -o "Shapet.o" "../Shapet.cpp"
-Finished building: ../Shapet.cpp
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
  
 Building target: Display
 Invoking: GCC C++ Linker
-g++  -o "Display"  ./Circlet.o ./Shapet.o ./Singleton.o ./main.o   -lglut -lGL -lGLU
+g++  -o "Display"  ./Circlet.o ./Ellipset.o ./Shapet.o ./Singleton.o ./main.o   -lglut -lGL -lGLU
 Finished building target: Display
  
-20:49:10 **** Incremental Build of configuration Debug for project Display ****
+21:21:56 **** Incremental Build of configuration Debug for project Display ****
 make all 
 make: Nothing to be done for `all'.

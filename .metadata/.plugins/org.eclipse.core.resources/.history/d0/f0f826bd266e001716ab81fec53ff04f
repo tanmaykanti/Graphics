@@ -1,0 +1,14 @@
+/*
+ * Ellipset.cpp
+ *
+ *  Created on: 21-Jul-2017
+ *      Author: tan
+ */
+
+#include "Ellipset.h"
+
+Ellipse_t::Ellipse_t() {
+	// TODO Auto-generated constructor stub
+
+}
+

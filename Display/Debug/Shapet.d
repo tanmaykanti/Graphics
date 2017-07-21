@@ -1,5 +1,5 @@
 Shapet.d: ../Shapet.cpp ../Build.h ../ConstantMacros.h \
- ../EnumDataTypes_t.h ../Shapet.h
+ ../EnumDataTypes_t.h ../Shapet.h ../Circlet.h ../Ellipset.h
 
 ../Build.h:
 
@@ -8,3 +8,7 @@ Shapet.d: ../Shapet.cpp ../Build.h ../ConstantMacros.h \
 ../EnumDataTypes_t.h:
 
 ../Shapet.h:
+
+../Circlet.h:
+
+../Ellipset.h:

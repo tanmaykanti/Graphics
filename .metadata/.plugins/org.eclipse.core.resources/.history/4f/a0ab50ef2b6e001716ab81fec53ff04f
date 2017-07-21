@@ -1,0 +1,98 @@
+/*
+ * Circlet.cpp
+ *
+ *  Created on: 16-Jul-2017
+ *      Author: tan
+ */
+#include "Build.h"
+#include "Circlet.h"
+
+Circle_t::Circle_t() {
+	// TODO Auto-generated constructor stub
+
+}
+
+void Circle_t::drawCircle(float x,float y,float radius,EnumDataTypes_t::color cid,bool isFill)
+{
+	int triangleCount=100;
+
+	if(isFill)
+	{
+		glBegin(GL_TRIANGLE_FAN);
+		Shape_t::colorDraw(cid);
+		glVertex2f(x,y);
+		for(int i=0;i<=triangleCount;i++)
+		{
+			float X= x + (radius*cos(2.0*PI*i/100.0));
+			float Y= y + (radius*sin(2.0*PI*i/100));
+			glVertex2f(X,Y);
+		}
+		glEnd();
+	}
+	else
+	{
+		glBegin(GL_LINE_LOOP);
+		colorDraw(cid);
+		for(int i=0;i<triangleCount;i++)
+		{
+			float X= x + (radius*cos(2.0*PI*i/100.0));
+			float Y= y + (radius*sin(2.0*PI*i/100));
+			glVertex2f(X,Y);
+		}
+		glEnd();
+	}
+}
+
+void Circle_t::drawFlag()
+{
+	// draw saffron color
+	colorDraw(EnumDataTypes_t::SAFFRON);
+	glBegin(GL_QUADS);
+	glVertex2f(-512,384);
+	glVertex2f(512,384);
+	glVertex2f(512,128);
+	glVertex2f(-512,128);
+	glEnd();
+
+	//draw white color
+	colorDraw(EnumDataTypes_t::WHITE);
+	glBegin(GL_QUADS);
+	glVertex2f(-512,128);
+	glVertex2f(512,128);
+	glVertex2f(512,-128);
+	glVertex2f(-512,-128);
+	glEnd();
+
+	//draw green color
+	colorDraw(EnumDataTypes_t::GREEN);
+	glBegin(GL_QUADS);
+	glVertex2f(-512,-128);
+	glVertex2f(512,-128);
+	glVertex2f(512,-384);
+	glVertex2f(-512,-384);
+	glEnd();
+
+	//draw centre circle
+	drawCircle(0,0,20,EnumDataTypes_t::BLUE,false);
+	drawCircle(0,0,10,EnumDataTypes_t::BLUE,true);
+
+	{
+	//draw spokes
+	glLineWidth(3);
+
+	for(int i=0;i<24;i++)
+	{
+		glPushMatrix();
+		glRotatef(15*i,0,0,1);
+		glBegin(GL_LINES);
+		glVertex2f(0,20);
+		glVertex2f(0,110);
+		glEnd();
+		glPopMatrix();
+	}
+	drawCircle(0,0,120,EnumDataTypes_t::BLUE,false);
+	glLineWidth(1);
+	}
+}
+
+

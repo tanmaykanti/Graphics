@@ -11,10 +11,14 @@
 #include <GL/glut.h>
 #include <GL/glu.h>
 
+#include <math.h>
+#include <stdlib.h>
 #include "ConstantMacros.h"
 #include "EnumDataTypes_t.h"
 
 #include "Shapet.h"
+#include "Circlet.h"
+#include "Ellipset.h"
 
 
 

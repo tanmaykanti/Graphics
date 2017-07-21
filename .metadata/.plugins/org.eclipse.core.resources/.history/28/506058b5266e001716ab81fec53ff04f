@@ -1,0 +1,16 @@
+/*
+ * Ellipset.h
+ *
+ *  Created on: 21-Jul-2017
+ *      Author: tan
+ */
+
+#ifndef ELLIPSET_H_
+#define ELLIPSET_H_
+
+class Ellipse_t {
+public:
+	Ellipse_t();
+};
+
+#endif /* ELLIPSET_H_ */

@@ -1,0 +1,22 @@
+/*
+ * Ellipset.cpp
+ *
+ *  Created on: 21-Jul-2017
+ *      Author: tan
+ */
+
+#include "Ellipset.h"
+#include "Build.h"
+Ellipse_t::Ellipse_t(float xc,float yc,float ac,float bc) {
+	// TODO Auto-generated constructor stub
+	x=xc;
+	y=yc;
+	a=ac;
+	b=bc;
+	float r;
+}
+
+float Ellipse_t::
+{
+
+}
